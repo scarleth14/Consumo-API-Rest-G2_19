@@ -20,8 +20,11 @@ tr{
     font-family: 'Imprima', sans-serif;
 }
 
+p{
+	text-align: justify;
+}
+
 #body{
-    background-color: rgb(233, 244, 255 );
     font-family: 'Imprima', sans-serif;
 }
 body{

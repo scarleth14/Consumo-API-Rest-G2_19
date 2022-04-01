@@ -30,8 +30,8 @@ function CargarFacturas(){
                 '<td>'+ MiItems[i].FECHA_VENCIMIENTO +'</td>'+
                 '<td>'+ MiItems[i].ESTADO +'</td>'+
                 '<td>' +
-                '<button class="btn btn-info btn-sm" onclick="CargarFactura('+ MiItems[i].ID +')">Editar</button>' +
-                '<button class ="btn btn-warning btn-sm" id="" onclick="EliminarFactura('+ MiItems[i].ID +')">Eliminar</button>' +
+                '<button class="btn btn-info" onclick="CargarFactura('+ MiItems[i].ID +')">Editar</button>' +
+                '<button class ="btn btn-warning" id="" onclick="EliminarFactura('+ MiItems[i].ID +')">Eliminar</button>' +
             '</tr>';
             $('.Facturas').html(Valores);
             }
