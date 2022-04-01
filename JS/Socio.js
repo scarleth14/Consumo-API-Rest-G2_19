@@ -30,8 +30,8 @@ function CargarSocios(){
                 '<td>'+ MiItems[i].ESTADO +'</td>' +
                 '<td>'+ MiItems[i].TELEFONO +'</td>' +
                 '<td>' +
-                '<button class="btn btn-info btn-sm" onclick="CargarSocio(' + MiItems[i].ID +')">Editar</button>' +
-                '<button class ="btn btn-warning btn-sm" id="" onclick="EliminarSocio(' + MiItems[i].ID +')">Eliminar</button>' +
+                '<button class="btn btn-info" onclick="CargarSocio(' + MiItems[i].ID +')">Editar</button>' +
+                '<button class ="btn btn-warning " id="" onclick="EliminarSocio(' + MiItems[i].ID +')">Eliminar</button>' +
             '</tr>' ;
             $('.Socios').html(Valores);
             }
@@ -149,11 +149,11 @@ function EliminarSocio(idsocio){
         contentType: 'application/json',
         success: function(response){
             console.log(response);
-            CargarSocios();
         },
         error: function(){
             alert('Error al eliminar socio');
         }
     });
     alert('Socio eliminado');
+    CargarSocios();
 }
